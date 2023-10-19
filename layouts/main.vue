@@ -9,7 +9,7 @@
 <script>
 
 export default {
-  name: "main",
+  name: "MainLayouts",
 }
 
 </script>
