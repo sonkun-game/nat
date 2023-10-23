@@ -18,9 +18,12 @@ export default {
     //     href: 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.css',
     //   },
     // ],
-    // script: [
-    //   {src: 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js'}
-    // ]
+    script: [
+      {
+        src: 'https://kit.fontawesome.com/4ec2fea601.js',
+        crossorigin: 'anonymous',
+      },
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

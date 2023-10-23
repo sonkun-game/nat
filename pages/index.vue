@@ -36,7 +36,7 @@
     <div id="NatSelect" class="mb-8">
       <h2 class="text-xl font-bold">#NatSelect</h2>
       <div class="flex gap-4">
-
+        <NatSelect></NatSelect>
       </div>
       <div>
         <textarea id="demoNatSelect" class="w-full p-4 shadow focus:border-none mt-8"></textarea>
@@ -54,12 +54,14 @@
 
 <script>
 import NatButton from '../components/Button/NatButton.vue';
+import NatSelect from '../components/Button/NatSelect.vue';
 
 export default {
   name: 'IndexPage',
   layout: "main",
   components: {
-    NatButton
+    NatButton,
+    NatSelect
   },
   methods: {
     testEventNatButton(message) {
