@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Nat Button Example-->
-    <div id="NatButtonID" class="mb-8">
+    <div id="NatButtonID" class="mb-8 border">
       <h2 class="text-xl font-bold">#Button</h2>
       <div class="flex gap-4">
         <NatButton :config="{ label: 'White', color: 'white', click: () => testEventNatButton('white') }" />
@@ -32,8 +32,8 @@
       </div>
     </div>
 
-    <!-- Nat Button Example-->
-    <div id="NatSelect" class="mb-8">
+    <!-- Nat Select Example-->
+    <div id="NatSelect" class="mb-8 border">
       <h2 class="text-xl font-bold">#NatSelect</h2>
       <div class="flex gap-4">
         <NatSelect></NatSelect>
@@ -49,19 +49,44 @@
         </pre>
       </div>
     </div>
+
+    <!-- Nat Checkbox Example-->
+    <div id="NatCheckbox" class="mb-8 border">
+      <h2 class="text-xl font-bold">#NatCheckbox</h2>
+      <div class="flex gap-4">
+        <NatCheckbox />
+        <NatCheckbox mode="2" />
+        <NatCheckbox mode="3" />
+      </div>
+      <div>
+        <textarea id="demoNatCheckbox" class="w-full p-4 shadow focus:border-none mt-8"></textarea>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold">#example</h3>
+        <pre>
+          <code class="language-markup w-full block">
+            &lt;NatCheckbox />
+            &lt;NatCheckbox mode="2" />
+            &lt;NatCheckbox mode="3" />
+          </code>
+        </pre>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import NatButton from '../components/Button/NatButton.vue';
 import NatSelect from '../components/Button/NatSelect.vue';
+import NatCheckbox from '../components/Input/NatCheckbox.vue';
 
 export default {
   name: 'IndexPage',
   layout: "main",
   components: {
     NatButton,
-    NatSelect
+    NatSelect,
+    NatCheckbox
   },
   methods: {
     testEventNatButton(message) {
