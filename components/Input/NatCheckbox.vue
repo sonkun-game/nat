@@ -17,7 +17,7 @@
       v-else-if="mode === '3'"
       @click="switchCheckbox()" name="container" class="w-16 h-8 cursor-pointer border border-gray-400 rounded-full shadow" 
       :class="{'bg-night': isSelect, 'bg-dawn': !isSelect}">
-      <div name="bell" :id="bell" class="bell w-8 h-8 bg-white rounded-full relative" :class="{'cover-night': isSelect, 'bg-amber-300 border border-amber-400': !isSelect}"></div>
+      <div name="bell" :id="bell" class="bell w-8 h-8 bg-white rounded-full relative" :class="{'cover-night': isSelect, 'bg-amber-400 border border-amber-400': !isSelect}"></div>
     </div>
     <div v-else>
       <span class="text-red-500">Component NatCheckbox error !</span>

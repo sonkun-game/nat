@@ -59,15 +59,46 @@
         <NatCheckbox mode="3" />
       </div>
       <div>
-        <textarea id="demoNatCheckbox" class="w-full p-4 shadow focus:border-none mt-8"></textarea>
-      </div>
-      <div>
         <h3 class="text-lg font-bold">#example</h3>
         <pre>
           <code class="language-markup w-full block">
             &lt;NatCheckbox />
             &lt;NatCheckbox mode="2" />
             &lt;NatCheckbox mode="3" />
+          </code>
+        </pre>
+      </div>
+    </div>
+
+        <!-- Nat Clock Example-->
+        <div id="NatClock" class="mb-8 border">
+      <h2 class="text-xl font-bold">#NatClock</h2>
+      <div class="flex gap-4">
+        <NatClock :is-dark="false"></NatClock>
+        <NatClock :is-dark="false" color="green"></NatClock>
+        <NatClock :is-dark="false" color="blue"></NatClock>
+        <NatClock :is-dark="false" color="red"></NatClock>
+        <NatClock :is-dark="false" color="purple"></NatClock>
+        <NatClock :is-dark="true"></NatClock>
+        <NatClock :is-dark="true" color="green"></NatClock>
+        <NatClock :is-dark="true" color="blue"></NatClock>
+        <NatClock :is-dark="true" color="red"></NatClock>
+        <NatClock :is-dark="true" color="purple"></NatClock>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold">#example</h3>
+        <pre>
+          <code class="language-markup w-full block">
+            &lt;NatClock :is-dark="false">&lt;/NatClock>
+            &lt;NatClock :is-dark="false" color="green">&lt;/NatClock>
+            &lt;NatClock :is-dark="false" color="blue">&lt;/NatClock>
+            &lt;NatClock :is-dark="false" color="red">&lt;/NatClock>
+            &lt;NatClock :is-dark="false" color="purple">&lt;/NatClock>
+            &lt;NatClock :is-dark="true">&lt;/NatClock>
+            &lt;NatClock :is-dark="true" color="green">&lt;/NatClock>
+            &lt;NatClock :is-dark="true" color="blue">&lt;/NatClock>
+            &lt;NatClock :is-dark="true" color="red">&lt;/NatClock>
+            &lt;NatClock :is-dark="true" color="purple">&lt;/NatClock>
           </code>
         </pre>
       </div>
@@ -79,6 +110,7 @@
 import NatButton from '../components/Button/NatButton.vue';
 import NatSelect from '../components/Button/NatSelect.vue';
 import NatCheckbox from '../components/Input/NatCheckbox.vue';
+import NatClock from '../components/Clock/NatClock.vue';
 
 export default {
   name: 'IndexPage',
@@ -86,7 +118,8 @@ export default {
   components: {
     NatButton,
     NatSelect,
-    NatCheckbox
+    NatCheckbox,
+    NatClock
   },
   methods: {
     testEventNatButton(message) {
